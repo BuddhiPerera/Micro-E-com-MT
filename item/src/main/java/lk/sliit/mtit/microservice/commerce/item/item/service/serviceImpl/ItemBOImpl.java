@@ -27,7 +27,7 @@ public class ItemBOImpl implements ItemBO {
     public ResponseTemplateVO getItemWithSeller(Long itemId) {
         ResponseTemplateVO responseTemplateVO = new ResponseTemplateVO();
         Items items = itemDAO.getByItemId(itemId);
-        Seller seller = restTemplate.getForObject("http://localhost:2001/sellers/"+items.getItemId(),Seller.class);
+        Seller seller = restTemplate.getForObject("http://SELLER-SERVICE/sellers/"+items.getSellerId(),Seller.class);
         responseTemplateVO.setItems(items);
         responseTemplateVO.setSeller(seller);
 

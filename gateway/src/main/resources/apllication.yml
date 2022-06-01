@@ -1,0 +1,10 @@
+spring.cloud.gateway.routes.id=USER-SERVICE
+spring.cloud.gateway.routes.uri=lb://USER-SERVICE
+spring.cloud.gateway.routes.predicates=Path=/users/**
+spring.cloud.gateway.routes.predicates=Path=/departments/**
+
+
+spring 
+  cloud
+    gateway 
+      rotes
