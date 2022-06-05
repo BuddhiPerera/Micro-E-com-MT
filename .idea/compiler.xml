@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="seller" />
+        <module name="item" />
+        <module name="demo" />
+        <module name="gateway" />
+        <module name="customer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customer" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="item" target="1.8" />
+      <module name="seller" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="customer" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="item" options="-parameters" />
+      <module name="seller" options="-parameters" />
+    </option>
+  </component>
+</project>
