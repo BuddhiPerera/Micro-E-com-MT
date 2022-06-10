@@ -1,9 +1,9 @@
-package lk.sliit.mtit.ecommerce.item.service.serviceimpl;
+package lk.sliit.mtit.ecommerce.cart.service.serviceimpl;
 
-import lk.sliit.mtit.ecommerce.item.dao.ItemDAO;
-import lk.sliit.mtit.ecommerce.item.dto.ItemDTO;
-import lk.sliit.mtit.ecommerce.item.entity.Item;
-import lk.sliit.mtit.ecommerce.item.service.ItemBO;
+import lk.sliit.mtit.ecommerce.cart.dao.ItemDAO;
+import lk.sliit.mtit.ecommerce.cart.dto.ItemDTO;
+import lk.sliit.mtit.ecommerce.cart.entity.Item;
+import lk.sliit.mtit.ecommerce.cart.service.ItemBO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

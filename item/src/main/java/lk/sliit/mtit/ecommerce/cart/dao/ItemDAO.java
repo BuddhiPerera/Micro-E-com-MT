@@ -1,6 +1,6 @@
-package lk.sliit.mtit.ecommerce.item.dao;
+package lk.sliit.mtit.ecommerce.cart.dao;
 
-import lk.sliit.mtit.ecommerce.item.entity.Item;
+import lk.sliit.mtit.ecommerce.cart.entity.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

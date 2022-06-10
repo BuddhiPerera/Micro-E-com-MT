@@ -1,4 +1,4 @@
-package lk.sliit.mtit.ecommerce.item;
+package lk.sliit.mtit.ecommerce.cart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

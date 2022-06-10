@@ -1,6 +1,6 @@
-package lk.sliit.mtit.ecommerce.item.service;
+package lk.sliit.mtit.ecommerce.cart.service;
 
-import lk.sliit.mtit.ecommerce.item.dto.ItemDTO;
+import lk.sliit.mtit.ecommerce.cart.dto.ItemDTO;
 
 import java.util.List;
 

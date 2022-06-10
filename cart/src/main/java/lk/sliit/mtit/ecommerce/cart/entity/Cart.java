@@ -1,4 +1,4 @@
-package lk.sliit.mtit.ecommerce.item.entity;
+package lk.sliit.mtit.ecommerce.cart.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,17 +8,16 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Data // getters / setters & toString methods
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Item {
+public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long cartId;
+    private Long userId;
     private Long itemId;
-    private String itemName;
-    private double itemPrice;
-    private int itemQty;
-    @Temporal(TemporalType.DATE) // to save Only Date
+    private Long qty;
+    @Temporal(TemporalType.DATE)
     private Date date;
-    private Long sellerId;
 }
