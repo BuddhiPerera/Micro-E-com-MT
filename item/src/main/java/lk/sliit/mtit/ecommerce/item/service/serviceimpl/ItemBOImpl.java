@@ -30,14 +30,13 @@ public class ItemBOImpl implements ItemBO {
                 itemDTO.getDate(),
                 itemDTO.getSellerId()
         ));
-        log.info("Save BO");
+        log.info("Save Item");
         return itemDTO;
     }
 
     @Override
     public ItemDTO getItem(Long itemId) {
         Item item = itemDAO.getByItemId(itemId);
-        System.out.println(item + "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         return new ItemDTO(
                 item.getItemId(),
                 item.getItemName(),

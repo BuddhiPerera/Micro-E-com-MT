@@ -9,9 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="seller" />
         <module name="item" />
+        <module name="supplier" />
         <module name="demo" />
         <module name="gateway" />
         <module name="customer" />
+        <module name="order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,7 +21,9 @@
       <module name="demo" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="item" target="1.8" />
+      <module name="order" target="1.8" />
       <module name="seller" target="1.8" />
+      <module name="supplier" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,7 +32,9 @@
       <module name="demo" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="item" options="-parameters" />
+      <module name="order" options="-parameters" />
       <module name="seller" options="-parameters" />
+      <module name="supplier" options="-parameters" />
     </option>
   </component>
 </project>
