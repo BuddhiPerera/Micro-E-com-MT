@@ -8,11 +8,11 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>lk.sliit.mtit.microservice.commerce.item</groupId>
-	<artifactId>item</artifactId>
+	<groupId>lk.sliit.mtit.microservice.commerce.cart</groupId>
+	<artifactId>cart</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>item</name>
-	<description>MTITI Project</description>
+	<name>cart</name>
+	<description>MTIT Project</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>

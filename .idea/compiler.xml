@@ -8,35 +8,40 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="seller" />
+        <module name="service-registory" />
         <module name="item" />
-        <module name="supplier" />
-        <module name="demo" />
-        <module name="gateway" />
+        <module name="item (2)" />
+        <module name="cloud-config-server" />
+        <module name="registory" />
         <module name="cart" />
-        <module name="customer" />
+        <module name="hystrixDashboard" />
+        <module name="carts" />
+        <module name="supplier" />
+        <module name="gateway" />
         <module name="order" />
+        <module name="customer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cart" target="1.8" />
-      <module name="customer" target="1.8" />
-      <module name="demo" target="1.8" />
-      <module name="gateway" target="1.8" />
       <module name="item" target="1.8" />
-      <module name="order" target="1.8" />
-      <module name="seller" target="1.8" />
-      <module name="supplier" target="1.8" />
+      <module name="untitled" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cart" options="-parameters" />
+      <module name="carts" options="-parameters" />
+      <module name="cloud-config-server" options="-parameters" />
       <module name="customer" options="-parameters" />
-      <module name="demo" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="hystrixDashboard" options="-parameters" />
       <module name="item" options="-parameters" />
+      <module name="item (2)" options="-parameters" />
       <module name="order" options="-parameters" />
+      <module name="registory" options="-parameters" />
       <module name="seller" options="-parameters" />
+      <module name="service-registory" options="-parameters" />
       <module name="supplier" options="-parameters" />
     </option>
   </component>
