@@ -7,24 +7,24 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: USER-SERVICE
-          uri: lb://USER-SERVICE
+        - id: CART-SERVICE
+          uri: lb://CART-SERVICE
           predicates:
-            - Path=/users/**
+            - Path=/cart/**
           filters:
             - name: CircuitBreaker
               args:
-                name: USER-SERVICE
-                fallbackuri: forward:/userServiceFallBack
-        - id: DEPARTMENT-SERVICE
-          uri: lb://DEPARTMENT-SERVICE
+                name: CART-SERVICE
+                fallbackuri: forward:/cartServiceFallBack
+        - id: SUPPLIER-SERVICE
+          uri: lb://SUPPLIER-SERVICE
           predicates:
-            - Path=/departments/**
+            - Path=/supplier/**
           filters:
             - name: CircuitBreaker
               args:
-                name: DEPARTMENT-SERVICE
-                fallbackuri: forward:/departmentServiceFallBack
+                name: SUPPLIER-SERVICE
+                fallbackuri: forward:/supplierServiceFallBack
         - id: DEPARTMENT-SERVICE
             uri: lb://DEPARTMENT-SERVICE
             predicates:
@@ -34,6 +34,42 @@ spring:
                 args:
                   name: DEPARTMENT-SERVICE
                   fallbackuri: forward:/departmentServiceFallBack
+        - id: ITEM-SERVICE
+            uri: lb://ITEM-SERVICE
+            predicates:
+              - Path=/items/**
+            filters:
+              - name: CircuitBreaker
+                args:
+                  name: ITEM-SERVICE
+                  fallbackuri: forward:/itemServiceFallBack
+        - id: ORDER-SERVICE
+            uri: lb://ORDER-SERVICE
+            predicates:
+              - Path=/orders/**
+            filters:
+              - name: CircuitBreaker
+                args:
+                  name: ORDER-SERVICE
+                  fallbackuri: forward:/orderServiceFallBack
+        - id: SELLER-SERVICE
+            uri: lb://SELLER-SERVICE
+            predicates:
+              - Path=/sellers/**
+            filters:
+              - name: CircuitBreaker
+                args:
+                  name: SELLER-SERVICE
+                  fallbackuri: forward:/sellerServiceFallBack
+        - id: CUSTOMER-SERVICE
+            uri: lb://CUSTOMER-SERVICE
+            predicates:
+              - Path=/customers/**
+            filters:
+              - name: CircuitBreaker
+                args:
+                  name: CUSTOMER-SERVICE
+                  fallbackuri: forward:/customerServiceFallBack
 
 
 hystrix:
